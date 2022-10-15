@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Números Aleatorios</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <br /><br />
+    <div class="container" id="forms">
+        <form class="form-horizontal">
+            <fieldset>
+                <legend>Cuadrados Centrales</legend>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="semilla">Semilla</label>
+                    <div class="col-md-4">
+                        <input id="semilla" name="semilla" type="text" placeholder="" class="form-control input-md"
+                            required="">
+                        <span class="help-block">Ingrese el número semilla.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="cantidad">Cantidad</label>
+                    <div class="col-md-4">
+                        <input id="cantidad" name="cantidad" type="text" placeholder="" class="form-control input-md"
+                            required="">
+                        <span class="help-block">Cantidad de números a generar</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="generar1"></label>
+                    <div class="col-md-4">
+                        <input type="button" id="generar1" name="generar1" class="btn btn-success"
+                            onclick="cuadradosCentrales()" value="Generar"></input>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <br /><br /><br />
+        <form class="form-horizontal">
+            <fieldset>
+                <legend>Productos Centrales</legend>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="semilla1">Semilla 1</label>
+                    <div class="col-md-4">
+                        <input id="semilla1" name="semilla1" type="text" placeholder="" class="form-control input-md"
+                            required="">
+                        <span class="help-block">Ingrese la primera semilla.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="semilla2">Semilla 2</label>
+                    <div class="col-md-4">
+                        <input id="semilla2" name="semilla2" type="text" placeholder="" class="form-control input-md"
+                            required="">
+                        <span class="help-block">Ingrese la segunda semilla.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="cantidad">Cantidad</label>
+                    <div class="col-md-4">
+                        <input id="cantidad1" name="cantidad1" type="text" placeholder="" class="form-control input-md"
+                            required="">
+                        <span class="help-block">Cantidad de números a generar</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="generar1"></label>
+                    <div class="col-md-4">
+                        <input type="button" id="generar1" name="generar1" class="btn btn-success"
+                            onclick="productosCentrales()" value="Generar"></input>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="container" id="results">
+    </div>
+
+</body>
+
+</html>

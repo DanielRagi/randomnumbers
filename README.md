@@ -1,2 +1,2 @@
 # randomnumbers
-Generation of pseudo-random numbers using the middle-square and middle-product methods
+Generation of pseudorandom numbers using the middle-square and middle-product methods. Coded in JavaScript.
